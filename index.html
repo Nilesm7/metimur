@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Metimur</title>
+  <link href="camstrap.css" rel="stylesheet" type="text/css">
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="body-wrapper">
+		<div class="navigation-bar">
+			<!--<img src="img/sunsetFL.svg" id="flake-logo"/>-->
+			<a id="home-link" href=""><h1 id="cameron-miller">Metimur</h1></a>
+			<div class="nav-list-container">
+				<ul class="nav-items-list">
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('About')">About</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('Services')">Services</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('Contact')">Contact</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+					<li>
+						<div class="nav-link-container">
+							<a class="navigation-link" onclick="displayContent('Log In')">Log In</a>
+							<div class="underline"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<img onclick="toggleNavList()" src="img/menu.svg" id="mobile-menu"/>
+			<div id="nav-list-container-mobile">
+				<ul class="nav-list-mobile">
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link"  onclick="displayContent('About')">About</a>
+						<p id="close-mobile" onclick="toggleNavList()">x</p>
+					</li>
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link" onclick="displayContent('Services')">Services</a>
+					</li>
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link" onclick="displayContent('Contact')">Contact</a>
+					</li>
+					<li class="nav-list-li-mobile">
+						<a class="navigation-link" onclick="displayContent('Log In')">Log In</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	  <div id="title-content-container"></div>
+		<div id="section-title-here">
+			<h2 id="hello-welcome">Insurance, zach smells</h2>
+		</div>
+
+		<div id="about-content" class="topic-content">
+			<div class="row project-background">
+				<!--<div class="col col-5 col-push-1 cam-photo-col">
+					<img src="img/cameron.jpg" id="cam-about"/>
+				</div>-->
+				<div class="col col-5 col-push-3">
+					<div class="project-text-wrapper">
+						<!--<h4 class="project-title" id="about-title">Cam</h4>-->
+						<p class="project-text" id="about-text">Providing reliable risk analysis on commercial and private properties in the US.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div id="services-content" class="topic-content">
+      <div class="row project-background">
+        <!--<div class="col col-5 col-push-1 cam-photo-col">
+          <img src="img/cameron.jpg" id="cam-about"/>
+        </div>-->
+        <div class="col col-5 col-push-3">
+          <div class="project-text-wrapper">
+            <!--<h4 class="project-title" id="about-title">Cam</h4>-->
+            <p class="project-text" id="about-text">Services info
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-content" class="topic-content">
+      <div class="row project-background">
+        <!--<div class="col col-5 col-push-1 cam-photo-col">
+          <img src="img/cameron.jpg" id="cam-about"/>
+        </div>-->
+        <div class="col col-5 col-push-3">
+          <div class="project-text-wrapper">
+            <!--<h4 class="project-title" id="about-title">Cam</h4>-->
+            <p class="project-text" id="about-text">Contact form
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="login-content" class="topic-content">
+      <div class="row project-background">
+        <!--<div class="col col-5 col-push-1 cam-photo-col">
+          <img src="img/cameron.jpg" id="cam-about"/>
+        </div>-->
+        <div class="col col-5 col-push-3">
+          <div class="project-text-wrapper">
+            <!--<h4 class="project-title" id="about-title">Cam</h4>-->
+            <p class="project-text" id="about-text">Log in
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+		<footer id="portfolio-footer">
+
+		</footer>
+
+		<div id="modal">
+			<button id="close" onclick="closeModal()">X</button>
+			<div id="modal-inner"></div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="metimur.js"></script>
+	<!--<script type="text/javascript" src="js/windowLoad.js"></script>-->
+
+</body>
+</html>
