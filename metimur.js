@@ -43,9 +43,9 @@ function displayProject(div) {
   }
 
   let contentToDisplay = document.getElementById(div);
+  contentToDisplay.style.opacity = '0';
   contentToDisplay.style.display = 'block';
   contentToDisplay.style.opacity = '1';
-  contentToDisplay.style.top = '-50px';
 }
 
 function displayContent(topic) {
