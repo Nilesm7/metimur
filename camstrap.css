@@ -44,15 +44,11 @@
   width: 91.67%;
 }
 
-.col-12 {
-  width: 100%;
-}
-
 .col {
   position: relative;
   float: left;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 5px;
 }
 
 .col-push-1 {
@@ -108,9 +104,6 @@
   display: block
 }
 
-
-
-
 @media (max-width: 900px) and (min-width: 470px) {
   .col-push-1 {
     margin-left: 0%;
@@ -121,22 +114,14 @@
   }
 }
 
+.col-12 {
+  width: 41.5%;
+  margin-left: 25%;
+}
+
 @media (max-width: 469px) and (min-width: 250px) {
-  .col-push-1 {
-    margin-left: 0%;
-  }
-  .col-5 {
-    width: 30%;
-  }
-  .col-4 {
-    width: 45%;
-  }
-
-  .cam-photo-col {
-    width: 90%;
-  }
-
-  .cam-text-col {
-    width: 90%;
+  .col-12 {
+    width: 100%;
+    margin: 0 auto;
   }
 }
